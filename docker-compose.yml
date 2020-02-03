@@ -10,3 +10,4 @@ services:
     - ./server:/app
    environment: &environment     
     - RPC_URL=http://localhost:4545
+   network_mode: host
