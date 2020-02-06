@@ -17,7 +17,9 @@ var dataToSend = contract.new.getData("0x587a264f7a203f12a09bfd3190777e0eab3032f
 
 var rawTx = {
   from: address,
-  gas: web3.toHex(0),
+  //gas: web3.toHex(0),
+  gasPrice: web3.toHex(0),
+  gasLimit: web3.toHex(800000),
   nonce: web3.toHex(count),
   data: dataToSend,
   //to: "0x6b8ba9acf40258c0f6cefd910736d8a4f495afea"
@@ -38,5 +40,5 @@ web3.eth.sendRawTransaction(dataSigned, function(error, hash) {
 	  let receipt = web3.eth.getTransactionReceipt(hash);
 	  console.log(receipt);
   	
-  }, 3000);
+  }, 10000);
 })
