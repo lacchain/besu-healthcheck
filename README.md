@@ -22,7 +22,13 @@ environment: &environment
 ```
 You can use http or https depending how you are accessing your Besu Node.
 
-If the connection is **successful** then a transaction receipt object will be shown, here you have an example:
+### Edit the docker compose file ###
+Run the code with:
+```shell
+$ docker-compose up
+```
+
+If the test is **successful** then a transaction receipt object will be shown, here you have an example:
 ```shell
 { blockHash: '0x548e47dd3165b0f45ddec69c7d309ea6e048c1be2f6bd2e7e52404557bd31063',
    blockNumber: 6993077,
