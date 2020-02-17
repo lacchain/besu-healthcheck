@@ -22,7 +22,7 @@ environment: &environment
 ```
 You can use http or https depending how you are accessing your Besu Node.
 
-### Edit the docker compose file ###
+### Running the code ###
 Run the code with:
 ```shell
 $ docker-compose up
