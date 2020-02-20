@@ -1,7 +1,7 @@
 # Besu Health Check #
 
 ## Introduction
-* This code helps users to test interactions with a Besu node by accessing to that through RPC.
+* The besu-health-check service helps users test interactions with a Besu node by accessing it through RPC
 
 ## Requirements
 * Docker compose
